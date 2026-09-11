@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "thunder_detector",
+	"version": "${mod_version}",
+	"name": "Thunder Detector",
+	"description": "When a thunder starts, the mod opens a new window with information about it!",
+	"authors": [
+		"Starman"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/thunder-detector",
+		"sources": "https://github.com/StarmanMine142/thunder_detector",
+		"issues": "https://github.com/StarmanMine142/thunder_detector/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/thunder_detector/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"starman.thunder_detector.ThunderDetectorFabric"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25"
+	}
+}
