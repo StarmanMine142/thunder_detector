@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "26.2.0.85"
+loaderVersion = "26.1.2.109"
 license = "MIT"
 
 [[mods]]
@@ -8,6 +8,7 @@ version = "${mod_version}"
 displayName = "Thunder Detector"
 description = "When a thunder starts, the mod opens a new window with information about it!"
 authors = "Starman"
+logoFile = "assets/thunder_detector/icon.png"
 iconFile = "assets/thunder_detector/icon.png"
 bannerFile = "assets/thunder_detector/icon.png"
 
@@ -17,13 +18,13 @@ issueTrackerURL = "https://github.com/StarmanMine142/thunder_detector/issues"
 [[dependencies.thunder_detector]]
 modId = "minecraft"
 type = "required"
-versionRange = "[26.2,)"
+versionRange = "[26.1.2,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.thunder_detector]]
 modId = "neoforge"
 type = "required"
-versionRange = "[26.2.0.85,)"
+versionRange = "[26.1.2.109,)"
 ordering = "NONE"
 side = "BOTH"

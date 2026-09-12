@@ -16,13 +16,13 @@
 	"icon": "assets/thunder_detector/icon.png",
 	"environment": "client",
 	"entrypoints": {
-		"main": [
+		"client": [
 			"starman.thunder_detector.ThunderDetectorFabric"
 		]
 	},
 	"depends": {
 		"fabricloader": ">=0.19.5",
-		"minecraft": "~26.2",
+		"minecraft": ">=26.1.2",
 		"java": ">=25"
 	}
 }

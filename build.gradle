@@ -5,7 +5,7 @@ plugins {
 }
 
 base {
-	archivesName = "${mod_id}-${mod_version}-${minecraft_version}"
+	archivesName = "${mod_id}-${mod_version}-${minecraft_display_version}"
 }
 
 repositories {
@@ -33,6 +33,10 @@ processResources {
 	inputs.properties(props)
 
 	filesMatching("META-INF/neoforge.mods.toml") {
+		expand props
+	}
+
+	filesMatching("fabric.mod.json") {
 		expand props
 	}
 }

@@ -1,10 +1,13 @@
 package starman.thunder_detector;
 
+import net.minecraft.client.Minecraft;
+
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.common.NeoForge;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,6 +17,8 @@ public class ThunderDetectorNeoforge {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public ThunderDetectorNeoforge() {
+        System.setProperty("java.awt.headless", "false");
+
         NeoForge.EVENT_BUS.register(this);
 
         LOGGER.info("Hello NeoForge world!");
@@ -21,6 +26,6 @@ public class ThunderDetectorNeoforge {
 
     @SubscribeEvent
     public void onClientTick(ClientTickEvent.Post event) {
-        ThunderChecker.check(net.minecraft.client.Minecraft.getInstance());
+        ThunderChecker.check(Minecraft.getInstance());
     }
 }
